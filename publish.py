@@ -5,6 +5,7 @@ from linkedin import linkedin
 from linkedin.models import AccessToken
 from fetch import get_top_story
 
+# TODO: actually use these ;)
 QUOTES = [
     'You guys should reall check this out!',
     'came across this great link',
@@ -16,7 +17,6 @@ QUOTES = [
 def get_authentication():
     APP_KEY = os.environ.get('LINKEDIN_APP_KEY')
     APP_SECRET = os.environ.get('LINKEDIN_APP_SECRET')
-    #AUTH_CODE = os.environ.get('LINKEDIN_AUTH_CODE')
     AUTH_TOKEN = os.environ.get('LINKEDIN_AUTH_TOKEN')
     RETURN_URL = 'http://localhost:5000/'
     SCOPES = ['r_basicprofile', 'w_share']
